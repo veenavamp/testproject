@@ -1,5 +1,5 @@
-FROM httpd:latest
+FROM tomcat:8-jre8
 
-WORKDIR /var/www/html
+WORKDIR /var/lib/jenkins/workspace/assignment
 
-COPY index.html index.html
+COPY **/*.war /etc/tomcat/webapps
